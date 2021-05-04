@@ -22,5 +22,5 @@ type Startup() =
         app.UseRouting() |> ignore
 
         app.UseEndpoints(fun endpoints ->
-            endpoints.MapGet("/", fun context -> context.Response.WriteAsync("Hello My First Branch")) |> ignore
+            endpoints.MapGet("/", fun context -> context.Response.WriteAsync("Hello My Second Branch")) |> ignore
             ) |> ignore
